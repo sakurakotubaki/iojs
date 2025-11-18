@@ -1,6 +1,8 @@
 // 配列のプロトタイプを確かめる例）
 const arr = [1, 2, 3];
 
+fffffff
+
 arr.push(4);
 
 console.log(arr.hasOwnProperty('push')); // true
