@@ -9,10 +9,12 @@ console.log(arr.push === Array.prototype.push); // true
 console.log(Object.getPrototypeOf(arr) === Array.prototype); // true
 
 // 配列をコピーする方法
-const arr2 = arr.slice(); // sliceメソッドで配列をコピー
+// sliceメソッドで配列をコピー
+const arr2 = arr.slice(); 
 console.log(arr2); // [1, 2, 3, 4]
 
-const copyArr = Array.from(arr); // Array.fromで配列をコピー
+// Array.fromで配列をコピー
+const copyArr = Array.from(arr); 
 console.log(copyArr); // [1, 2, 3, 4]
 
 // for(let i = 0; i < arr.length; i++)でコピーする。
@@ -40,6 +42,3 @@ console.log(lastElement);
 // コピーした配列から3を取り出す
 const thirdElement = arr2.splice(1, 1)[0];;
 console.log(thirdElement);
-
-console.log(arr2[2]);// undefinedになるのは、要素が削除されているため
-console.log(arr2[3]);// undefinedになるのは、要素が削除されているため
